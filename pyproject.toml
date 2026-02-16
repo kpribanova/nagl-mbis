@@ -27,12 +27,12 @@ dependencies = [
     "qcengine>=0.18.0",
     "numpy==1.26.4",
     "jinja2",
-    "chemper",
     "pandas<3.0.0",
     "openff-utilities",
     "pydantic",
     "polars",
     "espaloma-charge",
+    "chemper @ git+https://github.com/MobleyLab/chemper.git",
     "nagl @ git+https://github.com/bismuthadams1/nagl.git"
 ]
 
