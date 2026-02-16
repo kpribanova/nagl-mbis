@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel", "versioneer"]
+requires = ["setuptools>=61.0", "wheel"] #, "versioneer"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -43,20 +43,20 @@ dependencies = [
 zip-safe = false
 include-package-data = true
 
-[tool.setuptools.dynamic]
-version = {attr = "naglmbis.__version__"}
+# [tool.setuptools.dynamic]
+# version = {attr = "naglmbis.__version__"}
 
 [tool.setuptools.packages.find]
 namespaces = true
 where = ["."]
 
-[tool.versioneer]
-# Automatic version numbering scheme
-VCS = "git"
-style = "pep440"
-versionfile_source = "naglmbis/_version.py"
-versionfile_build = "naglmbis/_version.py"
-tag_prefix = 'naglmbis-'
+# [tool.versioneer]
+# # Automatic version numbering scheme
+# VCS = "git"
+# style = "pep440"
+# versionfile_source = "naglmbis/_version.py"
+# versionfile_build = "naglmbis/_version.py"
+# tag_prefix = 'naglmbis-'
 
 [tool.black]
 line-length = 88
