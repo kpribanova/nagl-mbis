@@ -28,7 +28,7 @@ dependencies = [
     "numpy==1.26.4",
     "jinja2",
     "chemper",
-    "pandas",
+    "pandas<3.0.0",
     "openff-utilities",
     "pydantic",
     "polars",
