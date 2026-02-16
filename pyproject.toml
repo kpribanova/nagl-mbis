@@ -4,13 +4,37 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "naglmbis"
+version = "0.1.0"
 description = "A collection of models to predict conformation independent MBIS charges and volumes of molecules, built on the [NAGL](https://github.com/SimonBoothroyd/nagl) package by SimonBoothroyd."
 authors = [ {name = "Joshua Horton"} ]
 license = { text = "MIT" }
-dynamic = ["version"]
+# dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = ["Programming Language :: Python :: 3"]
+
+dependencies = [
+    "pyarrow",
+    "dgl>=1",
+    "torch",
+    "pytorch-lightning",
+    "torchdata<=0.10.0",
+    "rich",
+    "click",
+    "click-option-group",
+    "openff-toolkit-base",
+    "openff-units>=0.2",
+    "qcengine>=0.18.0",
+    "numpy<=1.24.9",
+    "jinja2",
+    "chemper",
+    "pandas",
+    "openff-utilities",
+    "pydantic",
+    "polars",
+    "espaloma-charge",
+    "nagl @ git+https://github.com/bismuthadams1/nagl.git"
+]
 
 #[project.entry-points."openff.toolkit.plugins.handlers"]
 #NAGLMBIS = "naglmbis.plugins:NAGLMBISHandler"
